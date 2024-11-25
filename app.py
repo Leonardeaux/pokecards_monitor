@@ -21,12 +21,8 @@ def get_driver():
     return driver
 
 
-def get_url(driver, url):
-    driver.get(url)
-
-
-
 if __name__ == "__main__":
     print(os.name)
     driver = get_driver()
-    get_url(driver, "https://www.google.com")
+    url = "https://www.cardmarket.com/fr/Pokemon"
+    driver.get(url)
